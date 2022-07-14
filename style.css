@@ -1,0 +1,13 @@
+h1{
+  text-align:center;
+}
+#sites
+{
+  display:table;
+  width:100%;
+}
+.site{
+  display:table-cell;
+  align-content:center;
+  width:33.3%;
+}

@@ -1,0 +1,20 @@
+label{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 35%;
+  text-align: right;
+}
+input, textarea{
+  float:left;
+  margin-left: .5vw;
+  margin-right: .5vw;
+  /*margin-right:60%; /*ensures the button stays down*/
+  display:inline-block;
+}
+button
+{
+  display:block;
+  float:left;
+  margin-left:1vw;
+}

@@ -1,0 +1,23 @@
+#error{
+	position:absolute;
+	padding-left:25px;
+	padding-right:25px;
+	color:white;
+	font-size:15vw;
+	text-align:center;
+	background-color: rgba(0,0,0,.3);
+	z-index:1;
+}
+#movie
+{
+	opacity: 0.8;
+}
+span{
+	font-size: 2vw;
+}
+html, body{
+background-color:black;
+background:url("404.gif") no-repeat;
+background-size:100vw 100vh;
+
+}

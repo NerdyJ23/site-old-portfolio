@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 Error</title>
+	<meta name=viewport content='width=700'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+#error
+{
+  color:white;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 3;
+  padding: 25px;
+}
+h2, h4
+{
+  text-align:center;
+}
+html
+{
+    background-image:  url("/error_pages/404.gif");
+    background-repeat:no-repeat;
+	  background-size:contain;
+    background-position: center;
+    width:100%;
+    height:100%;
+    background-color:#101018;
+
+
+}
+</style>
+<script>
+function centerElement()
+{
+	var width = document.documentElement.clientWidth;
+	var height = document.documentElement.clientHeight;
+
+	var el = $("#error");//element to center
+	var elWidth = el.width();
+	var elHeight = el.height();
+	el.css({
+		position: 'absolute',
+		top: (height /2) - (elHeight /2),
+		left: (width /2) - (elWidth /2),
+	});
+
+}
+$("document").ready(function () {
+	$(window).resize(function(){
+		centerElement();
+	});
+  centerElement();
+  centerElement();
+
+})
+</script>
+<div id="error">
+  <h2>404 Error</h2>
+  <h4>File not found</h4>
+</div>
+</html>
